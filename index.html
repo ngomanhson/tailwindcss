@@ -6,109 +6,62 @@
     <title>Document</title>
     <link href="src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/app.css" />
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </head>
   <body>
-    <!-- <div class="pt-12">
-      <h1
-        class="text-center text-[#00f] text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-5"
-      >
-        Live anywhere
-      </h1>
-      <h2 class="text-center font-light text-xl text-gray-500 mb-35">
-        Keep calm & travel on
-      </h2>
-
+    <label for="toggle" class="inline-block cursor-pointer toggle-switch">
+      <input type="checkbox" id="toggle" class="darkmode-input hidden" />
       <div
-        class="grid grid-cols-1 lg:grid-cols-3 gap-[37px] max-w-6xl mx-auto px-[15px] gap-y-7 lg:gap-y-0"
+        class="w-[100px] h-[40px] border border-[#ccc] rounded-full fixed right-5 bottom-5 z-50 p-[5px] transition-colors"
       >
-        <div>
-          <div class="h-96 mb-5">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1668438110405-9cbe9f3700db?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"
-              alt=""
-              class="w-full h-full rounded-lg object-cover"
-            />
-          </div>
-          <h3 class="text-center font-medium text-gl mb-3">
-            Enjoy th great cold
-          </h3>
-          <span class="block text-center text-gray-400 text-sm"
-            >6,789 properties</span
-          >
-        </div>
-        <div>
-          <div class="h-96 mb-5">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1668438110405-9cbe9f3700db?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"
-              alt=""
-              class="w-full h-full rounded-lg object-cover"
-            />
-          </div>
-          <h3 class="text-center font-medium text-gl mb-3">
-            Enjoy th great cold
-          </h3>
-          <span class="block text-center text-gray-400 text-sm"
-            >6,789 properties</span
-          >
-        </div>
-        <div>
-          <div class="h-96 mb-5">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1668438110405-9cbe9f3700db?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"
-              alt=""
-              class="w-full h-full rounded-lg object-cover"
-            />
-          </div>
-          <h3 class="text-center font-medium text-gl mb-3">
-            Enjoy th great cold
-          </h3>
-          <span class="block text-center text-gray-400 text-sm"
-            >6,789 properties</span
-          >
+        <div
+          class="w-7 h-7 bg-[#ccc] rounded-full transition-transform drakmode-spinner"
+        ></div>
+      </div>
+    </label>
+    <div class="mx-auto max-w-[1200px] grid grid-cols-4 gap-x-5 p-5">
+      <div
+        class="px-5 py-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0f0d58]"
+      >
+        <img
+          src="https://free3dicon.com/wp-content/uploads/2022/11/perspective_matte-2-264x264.png"
+          alt=""
+          class="mb-5 max-w-[100px] mx-auto"
+        />
+        <h3 class="text-lg font-semibold mb-6 text-[#0f0d58] dark:text-white">
+          Recommendation
+        </h3>
+        <div
+          class="text-sm leading-loose text-[#9191b4] dark:text-white font-normal"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+          exercitationem modi voluptates quaerat accusamus odio eaque sint,
+          nihil dolor asperiores ipsum aspernatur, eligendi mollitia
+          reprehenderit incidunt, deleniti vero quibusdam non.
         </div>
       </div>
-    </div> -->
-    <!-- <div class="group p-10 border border-red-500">
-      <button
-        class="iniline-block py-3 px-10 m-5 text-white bg-[#6A5AF9] lg:group-hover:bg-[red] rounded-lg transition-all motion-safe:hover:scale-50 disabled:opacity-50"
-        disabled
-      >
-        Confirm
-      </button>
-      lg:group-hover:bg-[red]
     </div>
 
-    <input
-      type="text"
-      name=""
-      id=""
-      class="p-3 border border-[#ccc] outline-none rounded-xl m-3 lg:focus:border-[#6A5AF9] transition-all"
-    />
-
-    <input
-      type="checkbox"
-      class="appearance-none checked:bg-blue-600 checked:border-transparent w-5 h-5 border border-[#6A5AF9] transition-all"
-    />
-
-    <ul>
-      <li class="odd:bg-red-500">asd</li>
-    </ul> -->
-    <!-- hover: bg-red  -->
-
-    <div
-      before=""
-      class="w-10 h-10 flex items-center justify-center text-[#00aefd] mx-auto my-5 border rounded-xl relative before:content-[attr(before)] before:absolute before:inset-0 before:rounded-xl before:bg-current before:opacity-25"
-    >
-      <ion-icon name="airplane-outline"></ion-icon>
-    </div>
+    <script>
+      const toggleSwitch = document.querySelector(
+        '.toggle-switch input[type="checkbox"]'
+      );
+      const currentTheme = localStorage.getItem("theme");
+      if (currentTheme) {
+        document.documentElement.setAttribute("class", currentTheme);
+        if (currentTheme === "dark") {
+          toggleSwitch.checked = true;
+        }
+      }
+      function switchTheme(e) {
+        if (e.target.checked) {
+          document.documentElement.setAttribute("class", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.documentElement.setAttribute("class", "light");
+          localStorage.setItem("theme", "light");
+        }
+      }
+      toggleSwitch.addEventListener("change", switchTheme);
+    </script>
   </body>
 </html>
