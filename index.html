@@ -5,63 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="src/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./src/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <label for="toggle" class="inline-block cursor-pointer toggle-switch">
-      <input type="checkbox" id="toggle" class="darkmode-input hidden" />
-      <div
-        class="w-[100px] h-[40px] border border-[#ccc] rounded-full fixed right-5 bottom-5 z-50 p-[5px] transition-colors"
-      >
-        <div
-          class="w-7 h-7 bg-[#ccc] rounded-full transition-transform drakmode-spinner"
-        ></div>
-      </div>
-    </label>
-    <div class="mx-auto max-w-[1200px] grid grid-cols-4 gap-x-5 p-5">
-      <div
-        class="px-5 py-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0f0d58]"
-      >
-        <img
-          src="https://free3dicon.com/wp-content/uploads/2022/11/perspective_matte-2-264x264.png"
-          alt=""
-          class="mb-5 max-w-[100px] mx-auto"
-        />
-        <h3 class="text-lg font-semibold mb-6 text-[#0f0d58] dark:text-white">
-          Recommendation
-        </h3>
-        <div
-          class="text-sm leading-loose text-[#9191b4] dark:text-white font-normal"
+    <!-- <div class="max-w-[1140px] mx-auto flex items-center">
+      <div class="w-full max-w-[555px]">
+        <h1 class="text-[#0b132a] text-[50px] font-medium mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <strong>Ducimus, alias!</strong>
+        </h1>
+        <p class="text-[#4f5665] mb-[50px]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <strong>Eaque voluptas</strong> repudiandae aliquid libero et vel eum
+          necessitatibus amet!
+        </p>
+        <a
+          href="#!"
+          class="inline-block text-white font-bold p-4 w-full max-w-[250px] bg-[#f53838] rounded-[10px] text-center"
+          >Get Started</a
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
-          exercitationem modi voluptates quaerat accusamus odio eaque sint,
-          nihil dolor asperiores ipsum aspernatur, eligendi mollitia
-          reprehenderit incidunt, deleniti vero quibusdam non.
-        </div>
+      </div>
+      <div class="pl-10">
+        <img
+          src="https://images.unsplash.com/photo-1724002383554-990c369254f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8"
+          alt=""
+        />
+      </div>
+    </div> -->
+
+    <div class="grid-layout">
+      <div class="h-[200px] scroll-snap-start">
+        <img
+          src="https://images.unsplash.com/photo-1724002383554-990c369254f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="h-[200px] scroll-snap-start">
+        <img
+          src="https://images.unsplash.com/photo-1724002383554-990c369254f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="h-[200px] scroll-snap-start">
+        <img
+          src="https://images.unsplash.com/photo-1724002383554-990c369254f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="h-[200px] scroll-snap-start">
+        <img
+          src="https://images.unsplash.com/photo-1724002383554-990c369254f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8"
+          alt=""
+          class="w-full h-full object-cover"
+        />
       </div>
     </div>
-
-    <script>
-      const toggleSwitch = document.querySelector(
-        '.toggle-switch input[type="checkbox"]'
-      );
-      const currentTheme = localStorage.getItem("theme");
-      if (currentTheme) {
-        document.documentElement.setAttribute("class", currentTheme);
-        if (currentTheme === "dark") {
-          toggleSwitch.checked = true;
-        }
-      }
-      function switchTheme(e) {
-        if (e.target.checked) {
-          document.documentElement.setAttribute("class", "dark");
-          localStorage.setItem("theme", "dark");
-        } else {
-          document.documentElement.setAttribute("class", "light");
-          localStorage.setItem("theme", "light");
-        }
-      }
-      toggleSwitch.addEventListener("change", switchTheme);
-    </script>
   </body>
 </html>
